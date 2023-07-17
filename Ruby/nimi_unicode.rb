@@ -15,9 +15,16 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+# A script that helps assigning arbitrary unicode codepoints to compound Toki Pona words. I use it as part of a somewhat
+# hacky Toki Pona typesetting system.
+#
+# ARGV[0]: path to ruby file containing a Hash called "WORD_CONVERSIONS" that maps Toki Pona words to unicode codepoints
+
 require 'set' # BSD-2-Clause
 load ARGV[0]
 
+# Points corresponding to words that shouldn't show up in compounds. These are used in cases where an arbitrary
+# codepoint is needed to represent an alternate version of a word.
 WC_POINTS = %w[00 09]
 
 def find_point(point1, point2)
