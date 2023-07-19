@@ -19,34 +19,40 @@
 # workflow a little easier.
 
 class Time
+  # (Integer) -> String
   def initialize(start_time = 0)
     @minutes = 0
     @hours = 0
     add(start_time)
   end
 
+  # (Integer) -> String
   def add(other)
     @hours += other / 100 + (@minutes + other % 100) / 60
     @minutes = (@minutes + other % 100) % 60
     inspect
   end
 
+  # (Integer) -> String
   def subtract(other)
     @hours -= other / 100 + (@minutes - other % 100) / 60
     @minutes = (@minutes - other % 100) % 60
     inspect
   end
 
+  # (Array[Integer]) -> String
   def self.adds(others)
     temp = Time.new
     others.each { |other| temp.add(other) }
     temp.inspect
   end
 
+  # () -> void
   def argf
     ARGF.each { |arg| puts add(arg.chomp.to_i) }
   end
 
+  # () -> String
   def inspect
     "#{@hours}:#{@minutes.to_s.rjust(2, '0')}"
   end
