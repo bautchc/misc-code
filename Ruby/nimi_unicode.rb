@@ -35,7 +35,7 @@ def find_point(point1, point2)
   return "F#{point1}#{point2}" unless used_points.include?("F#{point1}#{point2}")
 
   point1 = point2 if point1 == '00'
-  [point1, point2].each point_end
+  [point1, point2].each |point_end| do
     WC_POINTS.each do |point_start|
       return "F#{point_start}#{point_end}" unless used_points.include?("F#{point_start}#{point_end}")
     end
@@ -66,6 +66,6 @@ if __FILE__ == $PROGRAM_NAME
                               to_codepoint(WORD_CONVERSIONS[nimi[1]])[-2, 2]
                             )
                 end
-    puts "'#{compound}' => #{' ' * (WORD_CONVERSIONS.keys.map(&:length).max - compound.length)}\"\\u{#{codepoint}}\","
+    puts "'#{compound}' => \"\\u{#{codepoint}}\","
   end
 end
