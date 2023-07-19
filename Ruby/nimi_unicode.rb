@@ -27,6 +27,7 @@ load ARGV[0]
 # codepoint is needed to represent an alternate version of a word.
 WC_POINTS = %w[00 09]
 
+# (String, String) -> String
 def find_point(point1, point2)
   used_points = WORD_CONVERSIONS.values
                                 .map { |value| to_codepoint(value) }
@@ -44,10 +45,12 @@ def find_point(point1, point2)
   puts "\e[31mAdd more wild card points\e[0m"
 end
 
+# (String) -> String
 def get_code(nimi)
   to_codepoint(WORD_CONVERSIONS[nimi])[-2, 2]
 end
 
+# (String) -> String
 def to_codepoint(string)
   string.each_codepoint
         .to_a
