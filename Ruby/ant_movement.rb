@@ -19,6 +19,8 @@
 # steps needed to reach one of an arbitrary set of points from random walking on a 2D grid.
 
 class Ant
+  # goal is a boolean function that defines whether a point is a goal point based on the x and y coordinates
+
   # ({ (Integer, Integer) -> bool }) -> void
   def initialize(goal)
     @x_pos = 0
