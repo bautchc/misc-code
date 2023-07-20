@@ -18,7 +18,27 @@
 # Takes the data from several json files in the format retrieved from Google's My Business API and formats it into a
 # csv.
 #
-# ARGV[0] csv containing a list of sites to be included in the csv.
+# Input json files should have data in the following format:
+# {
+#   locations: Array[{
+#     categories: {
+#       primaryCategory: {
+#         displayName: String
+#       }
+#     },
+#     metadata: {
+#       mapsUri: String
+#     },
+#     name: String,
+#     websiteUri: String?,
+#     additionalCategories: Array[{
+#       displayName: String
+#     }]?
+#   }]
+# }
+#
+# ARGV[0] csv containing a list of sites to be included in the csv. Site names should be in the first column, enclosed
+#         by [] or {} with any other text outside of it.
 # ARGV[1] Name of the csv to be created.
 
 require 'csv' # license: BSD-2-Clause
