@@ -16,6 +16,8 @@
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # A script used to convert markdown pipe tables into optimized markdown grid tables.
+#
+# ARGF: A file containing the maximum line width as the first line followed directly by the pipe table.
 
 # Maximum horizontal width of the table
 LINE_WIDTH = 120

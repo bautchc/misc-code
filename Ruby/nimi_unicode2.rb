@@ -18,7 +18,7 @@
 # A script that helps assigning arbitrary unicode codepoints to compound Toki Pona words. I use it as part of a somewhat
 # hacky Toki Pona typesetting system.
 #
-# ARGV[0]: path to ruby file containing a Hash called "WORD_CONVERSIONS" that maps Toki Pona words to unicode codepoints
+# ARGV[0]: path to ruby csv files containing the nimi and unicode character pairs.
 
 require 'set' # BSD-2-Clause
 require 'csv' # BSD-2-Clause
