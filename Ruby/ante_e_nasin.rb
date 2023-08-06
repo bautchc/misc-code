@@ -242,6 +242,7 @@ WORD_CONVERSIONS = {
   'e' => "\u{F1909}"
 }
 
+# (String) -> String
 def convert_to_latex(content)
   # Escape content inside of codeblocks
   content.scan(/^```$(.*?)^```$/m).flatten.each do |match|

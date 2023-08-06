@@ -21,10 +21,11 @@
 # ARGV[1] The name of the hash
 # ARGV[2] The path to the csv file to be created
 
+require 'csv' # BSD-2-Clause
 require ARGV[0]
 
 if __FILE__ == $PROGRAM_NAME
   CSV.open(ARGV[2], 'wb') do |csv|
-    exec(ARGV[1]).each {|kv| csv << kv}
+    eval(ARGV[1]).each {|kv| csv << kv}
   end
 end

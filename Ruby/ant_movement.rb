@@ -38,7 +38,7 @@ class Ant
       @x_pos -= 10
     when 2
       @y_pos += 10
-    else
+    when 3
       @y_pos -= 10
     end
     @moves += 1
