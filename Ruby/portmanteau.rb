@@ -15,18 +15,16 @@
 # OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-# Takes a list of words and finds all ideal portmanteaus between them, where an ideal portmaneau is defined as as a
+# Takes a list of words and finds all ideal portmanteaus between them, where an ideal portmanteau is defined as as a
 # portmanteau where the first word is a one-syllable word that creates the entire first syllable of the portmanteau and
 # the second word is a two-syllable word such that the second syllable of the second word creates the second syllable of
 # the portmanteau and the last n letters of the first syllable of the second word match the last n letters of the first
 # word. For example, "bread.sheet (b[read] sp[read].sheet)".
 #
-# This program uses the dataset found here: http://www.delphiforfun.org/programs/Syllables.htm
-#
+# This program uses the dataset, 'Syllables.txt', found here: http://www.delphiforfun.org/programs/Syllables.htm
 # However, any dataset that contains a text file of lines in the following format will work:
 #
 # syllables=syl\xB7la\xB7bles
-#
 # (where \xB7 is a literal byte that is not encoded in UTF-8)
 #
 # ARGV[0]: Minimum number of letters that must be shared between the first and second words of a portmanteau
@@ -35,9 +33,9 @@ MIN_SHARED = ARGV[0] || 4
 
 # (String, String, List[String]) -> String?
 def test_overlap(pre, post, all)
-  syls = post.split("\uFFFD") # \uFFFD is the unicode replacement character
+  syls = post.split('�')
   # Test from highest overlap to lowest
-  max = [pre.length - 1, post.index("\uFFFD")].min
+  max = [pre.length - 1, post.index('�')].min
   (4..max).each do |i|
     overlap = max - i + 4
     if pre[-overlap...] == syls[0][-overlap...] && !all.includes?(pre + syls[1])
@@ -62,7 +60,7 @@ def read_valid_words
     words = line.split('=')
     all << word[0]
     word = word[1]
-    syls = word.split("\uFFFD")
+    syls = word.split('�')
     # Only 1-syllable words can be the pre word, and only 2-syllable words can be the post word
     case syls.length
     when 1 then first << word if word.length > MIN_SHARED

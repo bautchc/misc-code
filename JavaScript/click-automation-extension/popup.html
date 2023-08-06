@@ -1,0 +1,59 @@
+<!--
+MIT No Attribution
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this
+software and associated documentation files (the "Software"), to deal in the Software
+without restriction, including without limitation the rights to use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 300px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      body > div {
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Make sure GA4 Account Exists & Start in GA3 Page</p>
+      <button id="turn-off-auto-setup">Turn Off Auto Setup</button>
+      <p>Make sure it says "Data Flowing"</p>
+      <button id="start-events">Start Converting Events</button>
+      <p>Change the names of the events according to the naming convention</p>
+      <button id="finish-events">Finish Converting Events</button>
+      <p>Add the "Dimension name" and "Event parameter"</p>
+      <button id="start-filters">Begin Adding Filters</button>
+      <p>Click "Define internal traffic, and check to make sure the iNET filter is included correctly. Then, <b>go to the GA3 tab before pressing the next button.</b> (you might have to refresh the extension from "Manage extensions" before the next step for it to work)</p>
+      <button id="check-filters">Check Filters</button>
+      <p>Check all of the filters and add any with ip addresses to the GA4 page. <b>Go to the GA4 tab and return to "Data Streams" page before pressing the next button.</b></p>
+      <button id="activate-filters">Activate Filters</button>
+      <p>Check that all filters are active.</p>
+      <button id="start-landing">Start Landing Page</button>
+      <p>Select "Landing page + query string", and perform the rest of the landing page setup.</p>
+      <button id="connect-console">Connect Search Console</button>
+      <p>Make sure the Google Search Console is connected.</p>
+      <button id="publish-report">Publish Report</button>
+      <p>Remove any conditions that specify a domain. Then, manually test everything.</p>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

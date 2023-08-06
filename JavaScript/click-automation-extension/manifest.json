@@ -1,0 +1,9 @@
+{
+  "manifest_version": 2,
+  "name": "GA3 To GA4",
+  "version": "1.0.1",
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}
