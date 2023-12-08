@@ -37,6 +37,7 @@
 !r:: Send '\rule[1pt]{{}0pt{}}{{}\baselineskip{}}'
 !+r:: Send '\raisebox{{}1pt{}}{{}'
 !t:: Send '\begin{{}tabularx{}}{{}\textwidth{}}{{}{}}{Enter}{Enter}\end{{}tabularx{}}'
+!+t:: Send '\textit{{}{}}'
 !v:: Send '\vspace{{}20pt{}}'
 !x:: Send '>{{}\centering\arraybackslash{}}X'
 !;:: Send '\right'
