@@ -18,6 +18,7 @@
 
 !-:: Send '—'
 
+!a:: Send '\addcontentsline{{}toc{}}{{}chapter{}}{{}{}}'
 !b:: Send '\begin{{}tbox{}}{{}{}}{Enter}{Enter}\end{{}tbox{}}'
 !+b:: Send '\begin{{}tbox{}}{{}TERMINOLOGY{}}{Enter}{Enter}\end{{}tbox{}}'
 !c:: Send '\frac{{}{}}{{}{}}'
