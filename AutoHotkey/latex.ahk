@@ -34,6 +34,7 @@
 !m:: Send '\renewcommand\tabularxcolumn[1]{{}m{{}{#}1{}}{}}'
 !+m:: Send '\begin{{}multicols{}}{{}2{}}{ENTER}{ENTER}\end{{}multicols{}}'
 !n:: Send '\newpage{Enter}\fancyhead[C]{{}{}}{ENTER}\begin{{}multicols{}}{{}2{}}{Enter}{Enter}\columnbreak{Enter}.{Enter}\end{{}multicols{}}'
+!+n:: Send '\begin{{}enumerate{}}[leftmargin=1em]{Enter}{Enter}\end{{}enumerate{}}'
 !p:: Send '\setlength{{}\parskip{}}{{}0pt{}}'
 !+p:: Send '\partial'
 !r:: Send '\rule[1pt]{{}0pt{}}{{}\baselineskip{}}'
