@@ -16,8 +16,6 @@
 ; Adds hotkeys to make LaTeX typesetting more efficient. Many of these are mostly useful for the specific ways that
 ; I personally typeset my LaTeX documents.
 
-#MenuMaskKey vkE8
-
 !-:: Send '—'
 
 !a:: Send '\addcontentsline{{}toc{}}{{}chapter{}}{{}{}}'
