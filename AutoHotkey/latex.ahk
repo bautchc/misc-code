@@ -19,7 +19,7 @@
 !-:: Send '—'
 
 !a:: Send '\addcontentsline{{}toc{}}{{}chapter{}}{{}{}}'
-!b:: Send '\begin{{}tbox{}}{{}\uppercase {}}{Enter}{Enter}\end{{}tbox{}}'
+!b:: Send '\begin{{}tbox{}}{{}\uppercase{{}{}}{}}{Enter}{Enter}\end{{}tbox{}}'
 !+b:: Send '\begin{{}tbox{}}{{}TERMINOLOGY{}}{Enter}{Enter}\end{{}tbox{}}'
 !c:: Send '\frac{{}{}}{{}{}}'
 !+c:: Send '\columnbreak'
@@ -33,7 +33,7 @@
 !l:: Send '\left'
 !m:: Send '\renewcommand\tabularxcolumn[1]{{}m{{}{#}1{}}{}}'
 !+m:: Send '\begin{{}multicols{}}{{}2{}}{ENTER}{ENTER}\end{{}multicols{}}'
-!n:: Send '\newpage{Enter}\addcontentsline{{}toc{}}{{}chapter{}}{{}}{enter}\fancyhead[C]{{}\uppercase{{}{}}{}}{ENTER}\begin{{}multicols{}}{{}2{}}{Enter}{Enter}\columnbreak{Enter}.{Enter}\end{{}multicols{}}'
+!n:: Send '\newpage{Enter}\addcontentsline{{}toc{}}{{}chapter{}}{{}{}}{enter}\fancyhead[C]{{}\uppercase{{}{}}{}}{ENTER}\begin{{}multicols{}}{{}2{}}{Enter}{Enter}\columnbreak{Enter}.{Enter}\end{{}multicols{}}'
 !+n:: Send '\begin{{}enumerate{}}[leftmargin=1em]{Enter}{Enter}\end{{}enumerate{}}'
 !p:: Send '\setlength{{}\parskip{}}{{}0pt{}}'
 !+p:: Send '\partial'
