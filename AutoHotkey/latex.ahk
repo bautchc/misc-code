@@ -34,7 +34,10 @@
   Send '\textbf{{}{}}'
 }
 !h:: Send '\hline'
-!i:: Send '\begin{{}ibox{}}{{}\uppercase{{}{}}{}}{Enter}{Enter}\end{{}ibox{}}'
+!i:: Send {
+  KeyWait 'Alt'
+  '\begin{{}ibox{}}{{}\uppercase{{}{}}{}}{Enter}{Enter}\end{{}ibox{}}'
+}
 !+i:: Send '\index{{}{}}'
 !l:: Send '\left'
 !m:: Send '\renewcommand\tabularxcolumn[1]{{}m{{}{#}1{}}{}}'
