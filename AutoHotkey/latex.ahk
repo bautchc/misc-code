@@ -27,7 +27,10 @@
 !c:: Send '\frac{{}{}}{{}{}}'
 !+c:: Send '\columnbreak'
 !d:: Send '\displaystyle'
-!+e:: Send '\begin{{}itemize{}}[leftmargin=1em]{Enter}{Enter}\end{{}itemize{}}'
+!+e:: {
+  KeyWait 'Alt'
+  Send '\begin{{}itemize{}}[leftmargin=1em]{Enter}{Enter}\end{{}itemize{}}'
+}
 !e:: Send '\item '
 !f:: {
   KeyWait 'Alt'
