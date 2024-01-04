@@ -34,9 +34,9 @@
   Send '\textbf{{}{}}'
 }
 !h:: Send '\hline'
-!i:: Send {
+!i:: {
   KeyWait 'Alt'
-  '\begin{{}ibox{}}{{}\uppercase{{}{}}{}}{Enter}{Enter}\end{{}ibox{}}'
+  Send '\begin{{}ibox{}}{{}\uppercase{{}{}}{}}{Enter}{Enter}\end{{}ibox{}}'
 }
 !+i:: Send '\index{{}{}}'
 !l:: Send '\left'
