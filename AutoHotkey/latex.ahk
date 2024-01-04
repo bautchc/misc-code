@@ -29,6 +29,7 @@
 !d:: Send '\displaystyle'
 !+e:: {
   KeyWait 'Alt'
+  KeyWait 'Shift'
   Send '\begin{{}itemize{}}[leftmargin=1em]{Enter}{Enter}\end{{}itemize{}}'
 }
 !e:: Send '\item '
