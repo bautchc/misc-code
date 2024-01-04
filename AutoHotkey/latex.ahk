@@ -48,7 +48,10 @@
   KeyWait 'Alt'
   Send '\begin{{}multicols{}}{{}2{}}{ENTER}{ENTER}\end{{}multicols{}}'
 }
-!n:: Send '\newpage{Enter}\addcontentsline{{}toc{}}{{}chapter{}}{{}{}}{enter}\fancyhead[C]{{}\uppercase{{}{}}{}}{ENTER}\begin{{}multicols{}}{{}2{}}{Enter}{Enter}\columnbreak{Enter}.{Enter}\end{{}multicols{}}'
+!n:: {
+  KeyWait 'Alt'
+  Send '\newpage{Enter}\addcontentsline{{}toc{}}{{}chapter{}}{{}{}}{enter}\fancyhead[C]{{}\uppercase{{}{}}{}}{ENTER}\begin{{}multicols{}}{{}2{}}{Enter}{Enter}\columnbreak{Enter}.{Enter}\end{{}multicols{}}'
+}
 !+n:: Send '\begin{{}enumerate{}}[leftmargin=1em]{Enter}{Enter}\end{{}enumerate{}}'
 !p:: Send '\setlength{{}\parskip{}}{{}0pt{}}'
 !+p:: Send '\partial'
