@@ -45,7 +45,10 @@
 }
 !+i:: Send '\index{{}{}}'
 !l:: Send '\left'
-!m:: Send '\renewcommand\tabularxcolumn[1]{{}m{{}{#}1{}}{}}'
+!m:: {
+  KeyWait 'Alt'
+  Send '\renewcommand\tabularxcolumn[1]{{}m{{}{#}1{}}{}}'
+}
 !+m:: {
   KeyWait 'Alt'
   Send '\begin{{}multicols{}}{{}2{}}{ENTER}{ENTER}\end{{}multicols{}}'
