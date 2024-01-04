@@ -39,6 +39,7 @@
 !h:: Send '\hline'
 !i:: {
   KeyWait 'Alt'
+  KeyWait 'Shift'
   Send '\begin{{}ibox{}}{{}\uppercase{{}{}}{}}{Enter}{Enter}\end{{}ibox{}}'
 }
 !+i:: Send '\index{{}{}}'
