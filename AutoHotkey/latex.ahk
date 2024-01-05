@@ -55,7 +55,7 @@
 }
 !+m:: {
   KeyWait 'Alt'
-  KeyWait, 'Shift'
+  KeyWait 'Shift'
   Send '\begin{{}multicols{}}{{}2{}}{ENTER}{ENTER}\end{{}multicols{}}'
 }
 !n:: {
