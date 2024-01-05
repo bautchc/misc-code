@@ -23,7 +23,11 @@
   KeyWait 'Alt'
   Send '\begin{{}tbox{}}{{}\uppercase{{}{}}{}}{Enter}{Enter}\end{{}tbox{}}'
 }
-!+b:: Send '\begin{{}tbox{}}{{}TERMINOLOGY{}}{Enter}{Enter}\end{{}tbox{}}'
+!+b:: {
+  KeyWait 'Alt'
+  KeyWait 'Shift'
+  Send '\begin{{}tbox{}}{{}TERMINOLOGY{}}{Enter}{Enter}\end{{}tbox{}}'
+}
 !c:: Send '\frac{{}{}}{{}{}}'
 !+c:: Send '\columnbreak'
 !d:: Send '\displaystyle'
