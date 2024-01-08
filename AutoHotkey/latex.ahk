@@ -89,7 +89,7 @@
 }
 !n:: {
   KeyWait 'Alt'
-  Send '\newpage{Enter}\addcontentsline{{}toc{}}{{}chapter{}}{{}{}}{enter}\fancyhead[C]{{}\uppercase{{}{}}{}}{ENTER}\begin{{}multicols{}}{{}2{}}{Enter}{Enter}\columnbreak{Enter}.{Enter}\end{{}multicols{}}'
+  Send '\newpage{Enter}\addcontentsline{{}toc{}}{{}chapter{}}{{}{}}{enter}\fancyhead[C]{{}\uppercase{{}{}}{}}{ENTER}\begin{{}multicols{}}{{}2{}}{Enter}{Enter}\columnbreak{Enter}~{Enter}\end{{}multicols{}}'
 }
 !+n:: {
   KeyWait 'Alt'
