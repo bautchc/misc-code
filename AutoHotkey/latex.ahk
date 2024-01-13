@@ -27,7 +27,7 @@
 }
 !b:: {
   KeyWait 'Alt'
-  Send '\begin{{}tbox{}}{{}\uppercase{{}{}}{}}{Enter}{Enter}\end{{}tbox{}}'
+  Send '\begin{{}tbox{}}{{}\textsc{{}{}}{}}{Enter}{Enter}\end{{}tbox{}}'
 }
 !+b:: {
   KeyWait 'Alt'
@@ -67,7 +67,7 @@
 !i:: {
   KeyWait 'Alt'
   KeyWait 'Shift'
-  Send '\begin{{}ibox{}}{{}\uppercase{{}{}}{}}{Enter}{Enter}\end{{}ibox{}}'
+  Send '\begin{{}ibox{}}{{}\textsc{{}{}}{}}{Enter}{Enter}\end{{}ibox{}}'
 }
 !+i:: {
   KeyWait 'Alt'
@@ -89,7 +89,7 @@
 }
 !n:: {
   KeyWait 'Alt'
-  Send '\newpage{Enter}\addcontentsline{{}toc{}}{{}chapter{}}{{}{}}{enter}\fancyhead[C]{{}\uppercase{{}{}}{}}{ENTER}\begin{{}multicols{}}{{}2{}}{Enter}{Enter}\columnbreak{Enter}~{Enter}\end{{}multicols{}}'
+  Send '\newpage{Enter}\addcontentsline{{}toc{}}{{}chapter{}}{{}{}}{enter}\fancyhead[C]{{}\textsc{{}{}}{}}{ENTER}\begin{{}multicols{}}{{}2{}}{Enter}{Enter}\columnbreak{Enter}~{Enter}\end{{}multicols{}}'
 }
 !+n:: {
   KeyWait 'Alt'
