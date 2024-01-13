@@ -32,11 +32,11 @@
 !+b:: {
   KeyWait 'Alt'
   KeyWait 'Shift'
-  Send '\begin{{}tbox{}}{{}TERMINOLOGY{}}{Enter}{Enter}\end{{}tbox{}}'
+  Send '\begin{{}tbox{}}{{}\textsc{{}Terminology{}}{}}{Enter}{Enter}\end{{}tbox{}}'
 }
 !c:: {
   KeyWait 'Alt'
-  Send '\frac{{}{}}{{}{}}'
+  Send '\textsc{{}{}}'
 }
 !+c:: {
   KeyWait 'Alt'
@@ -59,6 +59,10 @@
 !f:: {
   KeyWait 'Alt'
   Send '\textbf{{}{}}'
+}
+!+f:: {
+  KeyWait 'Alt'
+  Send '\frac{{}{}}{{}{}}'
 }
 !h:: {
   KeyWait 'Alt'
